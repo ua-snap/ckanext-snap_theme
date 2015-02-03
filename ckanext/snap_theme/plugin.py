@@ -21,7 +21,12 @@ class SnapThemePlugin(plugins.SingletonPlugin):
         # that CKAN will use this plugin's custom static files.
         toolkit.add_public_directory(config, 'public')
 
-        toolkit.add_resource('fanstatic', 'snap_theme')
+        # Register this plugin's fanstatic directory with CKAN.
+        # Here, 'fanstatic' is the path to the fanstatic directory
+        # (relative to this plugin.py file), and 'example_theme' is the name
+        # that we'll use to refer to this fanstatic directory from CKAN
+        # templates.
+        toolkit.add_resource('fanstatic', 'snap')
 
     def before_view(context, pkg_dict):
         '''
