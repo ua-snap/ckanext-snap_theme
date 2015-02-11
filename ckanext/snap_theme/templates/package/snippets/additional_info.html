@@ -8,27 +8,26 @@
   </button>
  
   <div id="additional_info_wrapper" class="collapse">
-
-    <h3>{{ _('Additional Info') }}</h3>
-    {% if pkg_dict.spatial_resolution %}
-      <h4>Spatial resolution</h4>
-      <p>{{ pkg_dict.spatial_resolution }}</p>
-    {% endif %}
-
-    {% if pkg_dict.temporal_start %}
-      <h4>Temporal extent</h4>
-      <p>Start date: {{ pkg_dict.temporal_start }}</p>
-      <p>End date: {{ pkg_dict.temporal_end }}</p>
-    {% endif %}
-    {% if pkg_dict.credits %}
-        <h4>Credits</h4>
-        <p>The following people worked on producing this data set:</p>
-        <ul>
-            {% for person in pkg_dict.credits %}
+      <h3>{{ _('Additional Info') }}</h3>
+      {% if pkg_dict.spatial_resolution %}
+          <h4>Spatial resolution</h4>
+          <p>{{ pkg_dict.spatial_resolution }}</p>
+      {% endif %}
+      {% if pkg_dict.temporal_start %}
+          <h4>Temporal extent</h4>
+          <p>Start date: {{ pkg_dict.temporal_start }}</p>
+          <p>End date: {{ pkg_dict.temporal_end }}</p>
+      {% endif %}
+      {% if pkg_dict.credits %}
+          <h4>Credits</h4>
+          <p>The following people worked on producing this data set:</p>
+          <ul>
+              {% for person in pkg_dict.credits %}
               <li>{{ person }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+              {% endfor %}
+          </ul>
+      {% endif %}
+    
     <table class="table table-striped table-bordered table-condensed">
       <thead>
         <tr>

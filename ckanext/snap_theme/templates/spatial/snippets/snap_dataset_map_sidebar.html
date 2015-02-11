@@ -26,7 +26,9 @@ spatial_resolution
 <section class="module module-narrow dataset-map">
 <h2 class="module-heading"><i class="icon-medium icon-globe"></i> {{ _('Dataset extent') }}</h2>
   <div class="module-content">
-      <p>{{ temporal_start }}&mdash;{{ temporal_end }}</p>
+      {% if temporal_start and temporal_end %}
+          <p>{{ temporal_start }}&mdash;{{ temporal_end }}</p>
+      {% endif %}
       <p>Spatial resolution: {{ spatial_resolution }}</p>
   </div>
   {% snippet "spatial/snippets/dataset_map_base.html", extent=extent %}

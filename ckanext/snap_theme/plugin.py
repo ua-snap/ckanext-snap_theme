@@ -32,6 +32,7 @@ class SnapThemePlugin(plugins.SingletonPlugin):
         '''
         Adds any additional data fields to the package dictionary for custom display
         '''
+
         # Turn the stored string of credits back into a list 
         credits = helpers.get_pkg_dict_extra(pkg_dict, 'credits', '');
         if credits:

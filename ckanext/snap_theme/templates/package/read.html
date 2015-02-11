@@ -11,8 +11,7 @@
 
   {% set dataset_extent = h.get_pkg_dict_extra(c.pkg_dict, 'spatial', '') %}
   {% if dataset_extent %}
-    {% snippet "spatial/snippets/snap_dataset_map_sidebar.html", extent=dataset_extent, temporal_start=c.pkg_dict.temporal_start, temporal_end=c.pkg_dict.temporal_end, spatial_resolution=c.pkg_dict.spatial_resolution  %}
+    {% snippet "spatial/snippets/snap_dataset_map_sidebar.html", extent=dataset_extent, temporal_start=c.pkg_dict.temporal_start, temporal_end=c.pkg_dict.temporal_end, spatial_resolution=c.pkg_dict.spatial_resolution %}
   {% endif %}
-
   {{ super() }}
 {% endblock %}
