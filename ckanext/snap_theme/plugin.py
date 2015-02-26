@@ -34,7 +34,7 @@ class SnapThemePlugin(plugins.SingletonPlugin):
         '''
 
         # Attach URL "download bucket" endpoint to package
-        pkg_dict['preview_url'] = helpers.get_pkg_dict_extra(pkg_dict, 'download-url', 'cows')
+        pkg_dict['preview_url'] = helpers.get_pkg_dict_extra(pkg_dict, 'download-url', '')
 
         # Turn the stored string of credits back into a list 
         credits = helpers.get_pkg_dict_extra(pkg_dict, 'credits', '');
