@@ -33,6 +33,9 @@ class SnapThemePlugin(plugins.SingletonPlugin):
         Adds any additional data fields to the package dictionary for custom display
         '''
 
+        # Attach URL "download bucket" endpoint to package
+        pkg_dict['preview_url'] = helpers.get_pkg_dict_extra(pkg_dict, 'download-url', 'cows')
+
         # Turn the stored string of credits back into a list 
         credits = helpers.get_pkg_dict_extra(pkg_dict, 'credits', '');
         if credits:
