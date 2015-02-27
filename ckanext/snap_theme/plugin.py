@@ -11,6 +11,9 @@ class SnapThemePlugin(plugins.SingletonPlugin):
     # We use this to customize the dictionary that ships to the snippets.
     plugins.implements(plugins.IPackageController, inherit=True)
 
+    # Implementing the IFacets interface lets us hide the organization and groups facets.
+    plugins.implements(plugins.IFacets)
+
     def update_config(self, config):
 
         # Add this plugin's templates dir to CKAN's extra_template_paths, so
@@ -64,3 +67,20 @@ class SnapThemePlugin(plugins.SingletonPlugin):
             pkg_dict['spatial_resolution'] = "{0} {1}".format(spatial_resolution, spatial_resolution_units)
 
         return pkg_dict
+
+    def _facets(self, facets_dict):
+        '''
+        Hide the Organization and Group facets.
+        '''
+        if 'groups' in facets_dict:
+            del facets_dict['groups']
+        if 'organization' in facets_dict:
+            del facets_dict['organization']
+        return facets_dict
+
+    def dataset_facets(self, facets_dict, package_type):
+        return self._facets(facets_dict)
+    def group_facets(self, facets_dict, group_type, package_type):
+        return self._facets(facets_dict)
+    def organization_facets(self, facets_dict, organization_type, package_type):
+        return self._facets(facets_dict)
