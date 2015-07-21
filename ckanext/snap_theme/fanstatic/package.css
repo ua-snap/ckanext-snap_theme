@@ -5,3 +5,8 @@
 #additional_info_wrapper {
     margin-bottom: 2em;
 }
+
+#content .wrapper .secondary .module:first-of-type .module-heading {
+    margin-top: 0;
+    padding-top: 32px;
+}
