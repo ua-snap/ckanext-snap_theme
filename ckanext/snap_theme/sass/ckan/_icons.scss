@@ -1,0 +1,67 @@
+.ckan-icon {
+    //.ie7-restore-right-whitespace;
+    display: inline-block;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url("#{$imagePath}/sprite-ckan-icons.png");
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1;
+    width: 14px;
+}
+
+.btn,
+.nav,
+.module-heading,
+.dropdown {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        margin-right: 4px;
+    }
+}
+
+.info-block {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        float: left;
+        font-size: 28px;
+        width: 28px;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+}
+
+.breadcrumb .home .icon-home {
+    font-size: 24px;
+    width: 24px;
+    vertical-align: -1px;
+}
+
+.info-block-small {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        font-size: 14px;
+        width: 14px;
+        margin-top: 1px;
+    }
+}
+
+.nav-tabs,
+.module-heading,
+.btn {
+    .fa {
+        &:last-child {
+            margin-right: 3px;
+        }
+    }
+}

@@ -1,3 +1,4 @@
 *.pyc
 *.swp
 ckanext_snap_theme.egg-info
+ckanext/snap_theme/.sass-cache/*
