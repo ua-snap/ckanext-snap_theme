@@ -1,8 +1,9 @@
-// A few things from variables.scss need
-// to be defined before being referenced elsewhere.
+// Order matters so we get priority.
 @import "bootstrap/variables";
 @import "ckan/variables";
+@import "snap/variables";
 
+// Helper, bootstrap and theme.
 @import "bootstrap-compass";
 @import "bootstrap/bootstrap";
 

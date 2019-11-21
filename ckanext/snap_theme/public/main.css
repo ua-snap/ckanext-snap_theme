@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 Twitter, Inc.
@@ -1719,7 +1720,7 @@ html {
 
 /* line 27, ../sass/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -7864,7 +7865,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -8001,7 +8002,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -9193,8 +9194,8 @@ a.tag:hover {
   top: 15px;
   right: -35px;
   width: 80px;
-  color: #fff;
-  background-color: #005d7a;
+  color: #000;
+  background-color: #fff;
   padding: 1px 20px;
   font-size: 11px;
   text-align: center;
@@ -9206,7 +9207,7 @@ a.tag:hover {
   list-style-type: none;
   min-height: 205px;
   padding-top: 15px;
-  background: #fbfbfb url("../../../base/images/bg.png");
+  background: white url("../../../base/images/bg.png");
   border: 1px solid #ddd;
   border-width: 1px 0;
 }
@@ -9273,13 +9274,13 @@ a.tag:hover {
 }
 /* line 66, ../sass/ckan/_media.scss */
 .media-view:hover, .media-view.hovered {
-  border-color: #005d7a;
+  border-color: #fff;
   -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
 }
 /* line 70, ../sass/ckan/_media.scss */
 .media-view:hover .banner, .media-view.hovered .banner {
-  background-color: #005d7a;
+  background-color: #fff;
 }
 /* line 74, ../sass/ckan/_media.scss */
 .media-view span {
@@ -10515,7 +10516,7 @@ select[data-module="autocomplete"] {
 }
 /* line 77, ../sass/ckan/_dataset.scss */
 .resource-item:hover {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 /* line 82, ../sass/ckan/_dataset.scss */
@@ -10581,16 +10582,16 @@ select[data-module="autocomplete"] {
 }
 /* line 136, ../sass/ckan/_dataset.scss */
 .resource-list.reordering .resource-item:hover .handle {
-  background-color: #eee;
+  background-color: #fff;
 }
 /* line 139, ../sass/ckan/_dataset.scss */
 .resource-list.reordering .resource-item.ui-sortable-helper {
-  background-color: #eee;
+  background-color: #fff;
   border: 1px solid #187794;
 }
 /* line 142, ../sass/ckan/_dataset.scss */
 .resource-list.reordering .resource-item.ui-sortable-helper .handle {
-  background-color: #eee;
+  background-color: #fff;
   border-color: #187794;
   color: #333;
 }
@@ -10712,7 +10713,7 @@ select[data-module="autocomplete"] {
   overflow: hidden;
   margin-right: 10px;
   color: #444;
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 3px;
 }
 /* line 253, ../sass/ckan/_dataset.scss */
@@ -11211,7 +11212,7 @@ select[data-module="autocomplete"] {
   [role=main],
   .main {
     padding-top: 10px;
-    background: #eee url("../../../base/images/bg.png");
+    background: #fff;
   }
 }
 /* line 54, ../sass/ckan/_layout.scss */
@@ -11489,7 +11490,7 @@ select[data-module="autocomplete"] {
 /* line 5, ../sass/ckan/_homepage.scss */
 .homepage .module-search {
   padding: 5px;
-  color: #fff;
+  color: #000;
   background: #fff;
 }
 /* line 10, ../sass/ckan/_homepage.scss */
@@ -11503,7 +11504,7 @@ select[data-module="autocomplete"] {
 /* line 16, ../sass/ckan/_homepage.scss */
 .homepage .module-search .module-content {
   border-radius: 3px 3px 0 0;
-  background-color: #005d7a;
+  background-color: #fff;
   border-bottom: none;
 }
 /* line 20, ../sass/ckan/_homepage.scss */
@@ -11516,7 +11517,7 @@ select[data-module="autocomplete"] {
 /* line 27, ../sass/ckan/_homepage.scss */
 .homepage .module-search .tags {
   padding: 5px 10px 10px 10px;
-  background-color: #003647;
+  background-color: #e6e6e6;
   border-radius: 0 0 3px 3px;
 }
 /* line 56, ../sass/ckan/_mixins.scss */
@@ -11613,8 +11614,8 @@ select[data-module="autocomplete"] {
 /* line 2, ../sass/ckan/_masthead.scss */
 .account-masthead {
   min-height: 30px;
-  color: #fff;
-  background: #003647 url("../../../base/images/bg.png");
+  color: #000;
+  background: #f2f2f2;
 }
 /* line 56, ../sass/ckan/_mixins.scss */
 .account-masthead:before, .account-masthead:after {
@@ -11642,12 +11643,12 @@ select[data-module="autocomplete"] {
 .account-masthead .account ul li {
   display: block;
   float: left;
-  border-left: 1px solid #00232e;
+  border-left: 1px solid #d9d9d9;
 }
 /* line 15, ../sass/ckan/_masthead.scss */
 .account-masthead .account ul li a {
   display: block;
-  color: #bfd7de;
+  color: #404040;
   font-size: 13px;
   font-weight: bold;
   padding: 0 10px;
@@ -11666,8 +11667,8 @@ select[data-module="autocomplete"] {
 }
 /* line 31, ../sass/ckan/_masthead.scss */
 .account-masthead .account ul li a:hover {
-  color: #d9e7eb;
-  background-color: #00232e;
+  color: #262626;
+  background-color: #d9d9d9;
   text-decoration: none;
 }
 /* line 36, ../sass/ckan/_masthead.scss */
@@ -11684,19 +11685,19 @@ select[data-module="autocomplete"] {
   font-size: 12px;
   margin-left: 3px;
   padding: 1px 6px;
-  background-color: #00232e;
+  background-color: #d9d9d9;
   border-radius: 4px;
   text-shadow: none;
-  color: #bfd7de;
+  color: #404040;
 }
 /* line 57, ../sass/ckan/_masthead.scss */
 .account-masthead .account .notifications a:hover span {
-  color: #fff;
-  background-color: #000f14;
+  color: #000;
+  background-color: #cccccc;
 }
 /* line 63, ../sass/ckan/_masthead.scss */
 .account-masthead .account .notifications.notifications-important a span.badge {
-  color: #fff;
+  color: #000;
   background-color: #C9403A;
 }
 /* line 70, ../sass/ckan/_masthead.scss */
@@ -11713,8 +11714,8 @@ select[data-module="autocomplete"] {
 .masthead, .site-footer {
   margin-bottom: initial;
   padding: 10px 0;
-  color: #fff;
-  background: #005d7a url("../../../base/images/bg.png");
+  color: #000;
+  background: #fff;
 }
 /* line 87, ../sass/ckan/_masthead.scss */
 .masthead .container, .site-footer .container {
@@ -11722,7 +11723,7 @@ select[data-module="autocomplete"] {
 }
 /* line 90, ../sass/ckan/_masthead.scss */
 .masthead a, .site-footer a {
-  color: #fff;
+  color: #000;
 }
 /* line 94, ../sass/ckan/_masthead.scss */
 .masthead hgroup h1, .site-footer hgroup h1,
@@ -11755,7 +11756,7 @@ select[data-module="autocomplete"] {
 }
 /* line 118, ../sass/ckan/_masthead.scss */
 .masthead .logo img, .site-footer .logo img {
-  max-height: 60px;
+  height: 60px;
 }
 /* line 122, ../sass/ckan/_masthead.scss */
 .masthead .navbar-collapse, .site-footer .navbar-collapse {
@@ -11779,7 +11780,7 @@ select[data-module="autocomplete"] {
 .masthead .navigation .nav-pills li a:hover, .site-footer .navigation .nav-pills li a:hover,
 .masthead .navigation .nav-pills li a:focus,
 .site-footer .navigation .nav-pills li a:focus, .masthead .navigation .nav-pills li.active a, .site-footer .navigation .nav-pills li.active a {
-  background-color: #003647;
+  background-color: #e6e6e6;
 }
 /* line 145, ../sass/ckan/_masthead.scss */
 .masthead .nav > li > a, .site-footer .nav > li > a,
@@ -11793,7 +11794,7 @@ select[data-module="autocomplete"] {
 .site-footer .nav > .active > a:hover,
 .masthead .nav > .active > a:focus,
 .site-footer .nav > .active > a:focus {
-  color: #fff;
+  color: #000;
   text-shadow: none;
 }
 /* line 154, ../sass/ckan/_masthead.scss */
@@ -11825,7 +11826,7 @@ select[data-module="autocomplete"] {
 .site-footer .btn-navbar-btn.disabled,
 .masthead .btn-navbar-btn[disabled],
 .site-footer .btn-navbar-btn[disabled] {
-  background-color: #003647;
+  background-color: #e6e6e6;
   background-image: none;
   border: none;
   -webkit-box-shadow: none;
@@ -12636,16 +12637,16 @@ h4 small {
 }
 /* line 56, ../sass/ckan/_resource-view.scss */
 .resource-view-list.reordering li:hover .handle {
-  background-color: #eee;
+  background-color: #fff;
 }
 /* line 59, ../sass/ckan/_resource-view.scss */
 .resource-view-list.reordering li.ui-sortable-helper {
-  background-color: #eee;
+  background-color: #fff;
   border: 1px solid #187794;
 }
 /* line 62, ../sass/ckan/_resource-view.scss */
 .resource-view-list.reordering li.ui-sortable-helper .handle {
-  background-color: #eee;
+  background-color: #fff;
   border-color: #187794;
   color: #333;
 }
@@ -12737,7 +12738,7 @@ h4 small {
 
 /* line 25, ../sass/ckan/_ckan.scss */
 body {
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #fff;
 }
 
 /* line 31, ../sass/ckan/_ckan.scss */
@@ -12889,8 +12890,108 @@ iframe {
   padding: 3px 5px;
 }
 
-/* line 2, ../sass/snap/_home.scss */
+/* line 1, ../sass/snap/_home.scss */
+.home {
+  /* Onramp is a block of ways to get to data or other content */
+}
+/* line 3, ../sass/snap/_home.scss */
+.home h1, .home h2, .home h3 {
+  text-align: center;
+}
+/* line 7, ../sass/snap/_home.scss */
 .home .intro {
   height: 600px;
-  background: #fff;
+  width: 100%;
+  background: #fff center/cover url("images/roxanne-desgagnes-qbtyUQtqJ8k-unsplash.jpg");
+}
+/* line 12, ../sass/snap/_home.scss */
+.home .intro h1 {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 70px;
+  font-weight: 400;
+  margin: 1em auto 2em;
+}
+/* line 19, ../sass/snap/_home.scss */
+.home .intro h1 em {
+  font-weight: 900;
+  font-style: normal;
+}
+/* line 25, ../sass/snap/_home.scss */
+.home .intro h2 {
+  color: #fff;
+  font-size: 49px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+/* line 33, ../sass/snap/_home.scss */
+.home .onramp {
+  margin: 5rem 0;
+  padding: 5rem 0;
+}
+/* line 38, ../sass/snap/_home.scss */
+.home .onramp h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  margin: 3em auto 2em;
+}
+/* line 45, ../sass/snap/_home.scss */
+.home .onramp h3 {
+  width: 40em;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 21px;
+}
+/* line 53, ../sass/snap/_home.scss */
+.home .categories {
+  background-color: #fff;
+}
+/* line 56, ../sass/snap/_home.scss */
+.home .categories .categories--categories {
+  margin: 1em auto;
+  text-align: center;
+}
+/* line 59, ../sass/snap/_home.scss */
+.home .categories .categories--categories .categories--category {
+  width: 15em;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 3rem;
+}
+/* line 64, ../sass/snap/_home.scss */
+.home .categories .categories--categories .categories--category img {
+  width: 100%;
+  display: block;
+}
+/* line 68, ../sass/snap/_home.scss */
+.home .categories .categories--categories .categories--category p {
+  font-size: 17.5px;
+  font-weight: bold;
+}
+/* line 77, ../sass/snap/_home.scss */
+.home .showcases {
+  min-height: 600px;
+  background: #fff center/cover url("images/lina-jarczyk-9cCjKsKeeng-unsplash.jpg");
+}
+/* line 81, ../sass/snap/_home.scss */
+.home .showcases.onramp h2 {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+/* line 85, ../sass/snap/_home.scss */
+.home .showcases.onramp h3 {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+/* line 92, ../sass/snap/_home.scss */
+.home .home-groups .media-list {
+  width: 50em;
+  margin: 2rem auto;
+}
+/* line 96, ../sass/snap/_home.scss */
+.home .home-groups .media-list li h4 {
+  font-weight: bold;
+}
+/* line 99, ../sass/snap/_home.scss */
+.home .home-groups .media-list li img {
+  width: 10rem;
 }

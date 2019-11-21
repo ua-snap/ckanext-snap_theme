@@ -1,6 +1,105 @@
 .home {
-    .intro {
-        height: 600px;
-        background: #fff;
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  .intro {
+    height: 600px;
+    width: 100%;
+    background: #fff center / cover url("images/roxanne-desgagnes-qbtyUQtqJ8k-unsplash.jpg");
+
+    h1 {
+      color: #fff;
+      text-shadow: 0 0 4px rgba(0, 0, 0, .50);
+      font-size: $font-size-base * 5;
+      font-weight: 400;
+      margin: 1em auto 2em;
+
+      & em {
+        font-weight: 900;
+        font-style: normal;
+      }
     }
+
+    h2 {
+      color: #fff;
+      font-size: $font-size-base * 3.5;
+      text-shadow: 0 0 2px rgba(0, 0, 0, .25);
+    }
+  }
+
+  /* Onramp is a block of ways to get to data or other content */
+  .onramp {
+
+    margin: 5rem 0;
+    padding: 5rem 0;
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      font-size: $font-size-base * 3;
+      margin: 3em auto 2em;
+    }
+
+    h3 {
+      width: 40em;
+      margin: 2em auto;
+      text-align: center;
+      font-size: $font-size-base * 1.5;
+    }
+  }
+
+  .categories {
+    background-color: $layoutBackgroundColor;
+
+    .categories--categories {
+      margin: 1em auto;
+      text-align: center;
+      .categories--category {
+        width: 15em;
+        text-align: center;
+        display: inline-block;
+        padding: 1rem 3rem;
+        img {
+          width: 100%;
+          display: block;
+        }
+        p {
+          font-size: $font-size-base * 1.25;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+  .showcases {
+    min-height: 600px;
+    background: #fff center / cover url("images/lina-jarczyk-9cCjKsKeeng-unsplash.jpg");
+    &.onramp {
+      h2 {
+        color: #fff;
+        text-shadow: 0 0 4px rgba(0, 0, 0, .50);
+      }
+      h3 {
+        background-color: rgba(255, 255, 255, .25);
+      }
+    }
+  }
+
+  .home-groups {
+    .media-list {
+      width: 50em;
+      margin: 2rem auto;
+      li {
+        h4 {
+          font-weight: bold;
+        }
+        img {
+          width: 10rem;
+        }
+      }
+    }
+  }
 }

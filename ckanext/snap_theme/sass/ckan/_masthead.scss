@@ -3,7 +3,7 @@ $notificationsBg: #C9403A;
     @include clearfix();
     min-height: 30px;
     color: $mastheadTextColor;
-    background: darken($mastheadBackgroundColor, 10%) url("#{$bgPath}");
+    background: darken($mastheadBackgroundColor, 5%);
     .account {
         float: right;
         ul {
@@ -83,7 +83,7 @@ $notificationsBg: #C9403A;
     margin-bottom: initial;
     padding: $grid-gutter-width/3 0;
     color: $mastheadTextColor;
-    background: $mastheadBackgroundColor url("#{$bgPath}");
+    background: $mastheadBackgroundColor;
     .container {
         position: relative;
     }
@@ -115,8 +115,8 @@ $notificationsBg: #C9403A;
     }
     .logo{
       display: inline-block;
-      img{
-        max-height: $logoMaxHeight;
+      img {
+        height: 60px;
       }
     }
     .navbar-collapse {
@@ -148,7 +148,7 @@ $notificationsBg: #C9403A;
     .nav>.active>a,
     .nav>.active>a:hover,
     .nav>.active>a:focus {
-        color: #fff;
+        color: $mastheadLinkColor;
         text-shadow: none;
     }
     .site-search {

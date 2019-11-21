@@ -1,0 +1,30 @@
+{#
+Renders a media item for a group. This should be used in a list.
+
+group - A group dict.
+
+Example:
+
+    <ul class="media-grid">
+      {% for group in groups %}
+        {% snippet "group/snippets/group_item.html", group=group %}
+      {% endfor %}
+    </ul>
+#}
+{% set type = group.type or 'group' %}
+{% set url = h.url_for(type ~ '_read', action='read', id=group.name) %}
+{% block item %}
+<li class="media">
+  <a class="media--block-link" href="{{ url }}">
+    <div class="media-left">
+      <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-object">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{ group.display_name }}</h4>
+      {% if group.description %}
+        <p>{{ h.markdown_extract(group.description, extract_length=500) }}</p>
+      {% endif %}
+    </div>
+  </a>
+</li>
+{% endblock %}

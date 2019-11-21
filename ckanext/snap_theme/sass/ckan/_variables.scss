@@ -5,7 +5,7 @@ $bgPath: "#{$imagePath}/bg.png";
 $FontAwesomePath: "../../../base/vendor/font-awesome/font";
 
 // Layout Variables
-$layoutFontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$layoutFontFamily: 'Tomorrow', sans-serif;
 $layoutTextColor: #444;
 $layoutBoldColor: #000;
 $layoutLinkColor: #187794;
@@ -37,9 +37,9 @@ $genericBorderColor: #ddd;
 
 $breadcrumbTextColor: #505050;
 
-$mastheadTextColor: #fff;
+$mastheadTextColor: #000;
 $mastheadLinkColor: $mastheadTextColor;
-$mastheadBackgroundColor: #005d7a;
+$mastheadBackgroundColor: #fff;
 $mastheadBackgroundColorStart: #005d7a;
 $mastheadBackgroundColorEnd: #00536b;
 
