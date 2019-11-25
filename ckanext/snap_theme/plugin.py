@@ -12,9 +12,8 @@ def get_showcases():
     sc = toolkit.get_action('ckanext_showcase_list')(
         data_dict={'sort': 'package_count desc', 'all_fields': True})
 
-    # Truncate the list to the 10 most popular groups only.
-    sc = sc[:10]
-    log.warning(sc)
+    # Truncate the list to the first 6.
+    sc = sc[:6]
 
     return sc
 

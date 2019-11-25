@@ -12,13 +12,13 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
 {% set truncate_title = truncate_title or 80 %}
 {% set title = package.title or package.name %}
 {% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
-
+{% set image_url = h.get_pkg_dict_extra(package, 'image_url') %}
 {% block package_item %}
 
 <li class="media-item">
   {% block item_inner %}
     {% block image %}
-      <img src="{{ package.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ package.name }}" class="media-image img-responsive">
+      <img src="{{ h.url_for_static('/uploads/showcase/' + image_url) }}" alt="{{ package.name }}" class="media-image img-responsive">
     {% endblock %}
     {% block title %}
       <h3 class="media-heading">{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name)) }}</h3>

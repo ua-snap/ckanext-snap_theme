@@ -100,6 +100,22 @@
         background-color: rgba(255, 255, 255, .75);
         padding: 1em;
       }
+
+      ul {
+        list-style-type: none;
+        width: 74vw;
+        margin: 1rem auto;
+        li {
+          width: 30vw;
+          padding: 1vw;
+          margin: 2vw;
+          h3 {
+            width: auto;
+            margin: 1em;
+            padding: 0;
+          }
+        }
+      }
     }
   }
 
