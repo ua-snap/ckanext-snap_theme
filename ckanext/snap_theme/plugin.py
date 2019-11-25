@@ -25,9 +25,6 @@ class SnapThemePlugin(plugins.SingletonPlugin):
     # We use this to customize the dictionary that ships to the snippets.
     plugins.implements(plugins.IPackageController, inherit=True)
 
-    # Implementing the IFacets interface lets us hide the organization and groups facets.
-    plugins.implements(plugins.IFacets)
-
     # Declare that this plugin will implement ITemplateHelpers.
     plugins.implements(plugins.ITemplateHelpers)
 
