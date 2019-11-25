@@ -1,0 +1,9 @@
+{# Based on the ckan/templates/snippets/simple_search.html #}
+
+{% set input_class = input_class or 'search-giant' %}
+<form class="form-inline dataset-search" method="GET" data-module="select-switch">
+  <span class="form-group {{ input_class }}">
+    <input type="text" class="search form-control" name="q" value="{{ q }}" autocomplete="off" placeholder="{{ placeholder }}" />
+    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> <span>{{ _('Search') }}</span></button>
+  </span>
+</form>

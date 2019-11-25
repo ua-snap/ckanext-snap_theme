@@ -12923,75 +12923,140 @@ iframe {
   font-size: 49px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
-/* line 33, ../sass/snap/_home.scss */
-.home .onramp {
-  margin: 5rem 0;
-  padding: 5rem 0;
+/* line 31, ../sass/snap/_home.scss */
+.home .intro form.dataset-search {
+  display: block;
+  width: 40em;
+  margin: 3rem auto;
 }
-/* line 38, ../sass/snap/_home.scss */
+/* line 36, ../sass/snap/_home.scss */
+.home .intro form.dataset-search input.search {
+  width: 30em;
+}
+/* line 40, ../sass/snap/_home.scss */
+.home .intro form.dataset-search button {
+  top: 0px;
+}
+/* line 47, ../sass/snap/_home.scss */
+.home .onramp {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+/* line 52, ../sass/snap/_home.scss */
 .home .onramp h2 {
   text-align: center;
   font-weight: bold;
   font-size: 42px;
-  margin: 3em auto 2em;
+  margin: 2rem auto 1rem;
 }
-/* line 45, ../sass/snap/_home.scss */
+/* line 59, ../sass/snap/_home.scss */
 .home .onramp h3 {
   width: 40em;
   margin: 2em auto;
   text-align: center;
   font-size: 21px;
 }
-/* line 53, ../sass/snap/_home.scss */
+/* line 67, ../sass/snap/_home.scss */
 .home .categories {
   background-color: #fff;
 }
-/* line 56, ../sass/snap/_home.scss */
+/* line 70, ../sass/snap/_home.scss */
 .home .categories .categories--categories {
   margin: 1em auto;
   text-align: center;
 }
-/* line 59, ../sass/snap/_home.scss */
+/* line 73, ../sass/snap/_home.scss */
 .home .categories .categories--categories .categories--category {
   width: 15em;
   text-align: center;
   display: inline-block;
   padding: 1rem 3rem;
 }
-/* line 64, ../sass/snap/_home.scss */
+/* line 78, ../sass/snap/_home.scss */
 .home .categories .categories--categories .categories--category img {
   width: 100%;
   display: block;
 }
-/* line 68, ../sass/snap/_home.scss */
+/* line 82, ../sass/snap/_home.scss */
 .home .categories .categories--categories .categories--category p {
   font-size: 17.5px;
   font-weight: bold;
 }
-/* line 77, ../sass/snap/_home.scss */
+/* line 91, ../sass/snap/_home.scss */
 .home .showcases {
   min-height: 600px;
   background: #fff center/cover url("images/lina-jarczyk-9cCjKsKeeng-unsplash.jpg");
 }
-/* line 81, ../sass/snap/_home.scss */
+/* line 95, ../sass/snap/_home.scss */
 .home .showcases.onramp h2 {
   color: #fff;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
-/* line 85, ../sass/snap/_home.scss */
+/* line 99, ../sass/snap/_home.scss */
 .home .showcases.onramp h3 {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1em;
 }
-/* line 92, ../sass/snap/_home.scss */
+/* line 107, ../sass/snap/_home.scss */
 .home .home-groups .media-list {
   width: 50em;
   margin: 2rem auto;
 }
-/* line 96, ../sass/snap/_home.scss */
-.home .home-groups .media-list li h4 {
-  font-weight: bold;
+/* line 110, ../sass/snap/_home.scss */
+.home .home-groups .media-list li {
+  padding: 1rem;
 }
-/* line 99, ../sass/snap/_home.scss */
-.home .home-groups .media-list li img {
-  width: 10rem;
+/* line 112, ../sass/snap/_home.scss */
+.home .home-groups .media-list li:hover {
+  background-color: #e6e6e6;
+}
+/* line 115, ../sass/snap/_home.scss */
+.home .home-groups .media-list li a {
+  color: #333333;
+}
+/* line 117, ../sass/snap/_home.scss */
+.home .home-groups .media-list li a h4 {
+  font-weight: bold;
+  margin-top: 0;
+}
+/* line 121, ../sass/snap/_home.scss */
+.home .home-groups .media-list li a img.media-object {
+  width: 20rem;
+}
+/* line 130, ../sass/snap/_home.scss */
+.home .home-organizations ul {
+  width: 40em;
+  margin: 2rem auto;
+  padding: 0;
+}
+/* line 134, ../sass/snap/_home.scss */
+.home .home-organizations ul li.media-item {
+  height: 28rem;
+  display: inline-block;
+  list-style-type: none;
+  margin: 1rem;
+  padding: 2rem;
+  width: 25rem;
+}
+/* line 141, ../sass/snap/_home.scss */
+.home .home-organizations ul li.media-item h3 {
+  width: auto;
+  text-align: left;
+  margin: 1rem auto 1rem;
+}
+/* line 146, ../sass/snap/_home.scss */
+.home .home-organizations ul li.media-item:hover {
+  background-color: #e6e6e6;
+}
+/* line 149, ../sass/snap/_home.scss */
+.home .home-organizations ul li.media-item img {
+  max-height: 10rem;
+}
+
+/* Move this elsewhere soon */
+/* line 5, ../sass/snap/_snap.scss */
+.nav-item {
+  padding: 3rem;
 }

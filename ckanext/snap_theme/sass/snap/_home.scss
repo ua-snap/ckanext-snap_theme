@@ -27,19 +27,33 @@
       font-size: $font-size-base * 3.5;
       text-shadow: 0 0 2px rgba(0, 0, 0, .25);
     }
+
+    form.dataset-search {
+      display: block;
+      width: 40em;
+      margin: 3rem auto;
+
+      input.search {
+        width: 30em;
+      }
+
+      button {
+        top: 0px;
+      }
+    }
   }
 
   /* Onramp is a block of ways to get to data or other content */
   .onramp {
 
-    margin: 5rem 0;
-    padding: 5rem 0;
+    margin-top: 3rem; margin-bottom: 3rem;
+    padding-top: 3rem; padding-bottom: 3rem;
 
     h2 {
       text-align: center;
       font-weight: bold;
       font-size: $font-size-base * 3;
-      margin: 3em auto 2em;
+      margin: 2rem auto 1rem;
     }
 
     h3 {
@@ -80,10 +94,11 @@
     &.onramp {
       h2 {
         color: #fff;
-        text-shadow: 0 0 4px rgba(0, 0, 0, .50);
+        text-shadow: 0 0 5px rgba(0, 0, 0, .80);
       }
       h3 {
-        background-color: rgba(255, 255, 255, .25);
+        background-color: rgba(255, 255, 255, .75);
+        padding: 1em;
       }
     }
   }
@@ -93,11 +108,46 @@
       width: 50em;
       margin: 2rem auto;
       li {
-        h4 {
-          font-weight: bold;
+        padding: 1rem;
+        &:hover {
+          background-color: darken($body-bg, 10);
+        }
+        a {
+          color: $text-color;
+          h4 {
+            font-weight: bold;
+            margin-top: 0;
+          }
+          img.media-object {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+
+  .home-organizations {
+    ul {
+      width: 40em;
+      margin: 2rem auto;
+      padding: 0;
+      li.media-item {
+        height: 28rem;
+        display: inline-block;
+        list-style-type: none;
+        margin: 1rem;
+        padding: 2rem;
+        width: 25rem;
+        h3 {
+          width: auto;
+          text-align: left;
+          margin: 1rem auto 1rem;
+        }
+        &:hover {
+          background-color: darken($body-bg, 10);
         }
         img {
-          width: 10rem;
+          max-height: 10rem;
         }
       }
     }
