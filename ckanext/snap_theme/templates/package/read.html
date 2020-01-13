@@ -1,0 +1,49 @@
+{% extends "package/read_base.html" %}
+
+{% set pkg = c.pkg_dict %}
+{% set extras = h.sorted_extras(pkg.extras) %}
+
+{% block pre_primary %}
+  <h1 class="package-title">
+    {% block page_heading %}
+      {{ h.dataset_display_name(pkg) }}
+      {% if pkg.state.startswith('draft') %}
+        [{{ _('Draft') }}]
+      {% endif %}
+      {% if pkg.state == 'deleted' %}
+        [{{ _('Deleted') }}]
+      {% endif %}
+    {% endblock %}
+  </h1>
+{% endblock %}
+
+{% block primary_content_inner %}
+  {{ super() }}
+  {% block package_description %}
+    {% if pkg.private %}
+      <span class="dataset-private label label-inverse pull-right">
+        <i class="fa fa-lock"></i>
+        {{ _('Private') }}
+      </span>
+    {% endif %}
+
+    {% if h.get_pkg_dict_extra(pkg, 'image_preview') %}
+      <img style="max-width: 75%; margin-bottom: 2rem;" src="{{ h.get_pkg_dict_extra(pkg, 'image_preview') }}" />
+    {% endif %}
+
+
+    {% block package_notes %}
+      {% if pkg.notes %}
+        <div class="notes embedded-content">
+          {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+  {% endblock %}
+
+  {% block package_additional_info %}
+    {% snippet "package/snippets/additional_info.html", pkg_dict=pkg %}
+  {% endblock %}
+
+{% endblock %}

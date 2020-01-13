@@ -1,7 +1,81 @@
 
 @import "home";
 
-/* Move this elsewhere soon */
+/* SNAP stuff */
+h1.package-title {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.package-sidebar {
+  .resource-item {
+    h3 {
+      margin: 0;
+    }
+  }
+  ul.tag-list {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .organization {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h1 { display: none; }
+    p { display: none; }
+  }
+}
+
+
+/*
+CKAN/Bootstrap overrides
+
+These items could be moved into the relevant
+places in the SCSS generated from CKAN's custom LESS,
+but it may make sense to let them accumulate to a certain
+point first to isolate the auto-generated CKAN SCSS.
+*/
 .nav-item {
   padding: 3rem;
+}
+
+/* Package display */
+
+/*
+Don't draw tabs bottom borders if no tabs!
+This related to the "action tabs" above each package
+which we wanted to remove.
+*/
+article.module ul.nav-tabs {
+  border-bottom: none !important;
+}
+
+#dataset-resources ul.resource-list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 1em;
+
+    a {
+      font-size: 125%;
+      font-weight: 600;
+      display: block;
+    }
+  }
+}
+
+ul.tag-list li a.tag {
+  padding: 2px 10px;
+}
+
+ol.breadcrumb {
+  background-color: transparent !important;
+  margin-bottom: -10px;
+}
+
+.organization.module-content img {
+  max-width: 75%;
 }

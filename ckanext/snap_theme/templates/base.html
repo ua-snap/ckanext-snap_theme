@@ -5,6 +5,5 @@
 {% endblock %}
 
 {% block styles %}
-  {{ super() }}
-  <link rel="stylesheet" href="/main.css" />
+  {% resource 'snap/main.css' %}
 {% endblock %}

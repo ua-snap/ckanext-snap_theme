@@ -16,15 +16,14 @@
         {% snippet "home/simple_search.html", placeholder="Search datasets..." %}
       </div>
     </div>
-
     <div class="row onramp categories">
       <div class="col-md-12">
         <h2>Categories</h2>
         <h3>Explore our data through categories and tags.</h3>
         <div class="categories--categories">
           <a href="{{ h.url_for(controller='package', action='search', tags=['climate', 'IEM']) }}" class="categories--category">
-            <img src="images/noun_climate_2731699.png" alt="Climate" />
-            <p>Climate</p>
+            <img src="/images/noun_climate_2731699.png" alt="Climate" />
+            <p>Climate COWS</p>
           </a>
           <a href="{{ h.url_for(controller='package', action='search', tags=['fire+scar', 'burn+severity']) }}" class="categories--category">
             <img src="images/noun_wildfire_1887962.png" alt="noun_wildfire_1887962.png" />
